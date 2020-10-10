@@ -3,47 +3,29 @@ body, html {
   text-align: center;
 }
 
+.container-fluid{
+  background-color: #5fdde5;
+  font-size: 2rem;
+  font-family: 'PT Sans', sans-serif;
+  color: #0e9aa7;
+}
+
+.nav-item{
+  padding: 0 40px;
+}
+
 .image{
   height: 10vh;
+  padding: 0 6rem;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0 30px 0 30px;
-  /* padding: 10px; */
-  overflow: hidden;
-  font-size: 1.75rem;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+.image1{
+  height: 2vh;
+  visibility: hidden;
+}
+
+.navbar{
   background-color: #5fdde5;
-}
-.nav{
-  background-color: #5fdde5;
-
-}
-.left{
-  float: left;
-}
-
-.left a {
-  display: inline-block;
-  color: #0e9aa7;
-  text-align: center;
-  padding: 1.5rem 2rem 0 4rem;
-  text-decoration: none;
-}
-
-.right a {
-  display: inline-block;
-  color: #0e9aa7;
-  text-align: center;
-  padding: 1.5rem 2rem 0 4rem;
-  text-decoration: none;
-
-}
-
-.right{
-  float:right;
 }
 
 .parallax{
@@ -58,6 +40,7 @@ ul {
 }
 
 .title-text{
+  margin-left:7vw;
   width: 40%;
   padding: 60px;
   margin-top: 15%;
@@ -167,7 +150,29 @@ ul {
   width: 30%;
   margin-left: 35%;
 }
+.center{text-align: center;}
 
 span{
   color: #ed6663;
+}
+
+@media (max-width: 1028px){
+  .image1{
+    visibility: visible;
+    height: 10vh;
+    align-self: center;
+  }
+  .image{
+    visibility: hidden;
+    height: 1vh;
+  }
+  .title-text{
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  .text6{
+    width:40%;
+    margin-top: 50%;
+    margin-left: 30%;
+  }
 }
